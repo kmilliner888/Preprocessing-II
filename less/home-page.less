@@ -36,9 +36,8 @@ body {
     }
 
     @media @mobile {
-      flex-wrap: nowrap;
       flex-direction: column;
-      align-items: center;
+
 
       .text-content {
         width: 100%;
@@ -46,6 +45,10 @@ body {
 
       .img-content {
         width: 100%;
+
+        img {
+          width: 100%;
+        }
       }
     }
   }
@@ -63,6 +66,24 @@ body {
       padding-right: 1%;
       padding-left: 0;
     }
+
+    @media @mobile {
+      flex-direction: column;
+
+      .text-content {
+        width: 100%;
+        order: 1;
+      }
+
+      .img-content {
+        width: 100%;
+        order: 2;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
 
   .content-destination {
@@ -71,6 +92,13 @@ body {
 
     img {
       border-radius: 10px;
+    }
+
+    @media @mobile {
+      width: 100%;
+      h2, p, img {
+        width: 100%;
+      }
     }
   }
 
@@ -84,8 +112,27 @@ body {
       width: 30%;
       margin-bottom: 30px;
         .btn {
-          .button-style(teal, 1px solid teal, 10px, 16px, 8px, 70%, white, center);
+          .button-style(teal, 10px, 16px, 8px, 100%, white, center);
         }
+    }
+
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      .destination {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+
+        .btn {
+          .button-style(lighten(teal, 10%), 10px, 16px, 8px, 100%, white, center);
+        }
+      }
+
+        
+
     }
   }
 
