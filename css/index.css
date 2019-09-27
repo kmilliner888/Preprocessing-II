@@ -182,6 +182,15 @@ img {
   color: black;
   padding: 10px;
 }
+@media (max-width: 500px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -192,6 +201,9 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+body {
+  margin: 0px 20px;
 }
 .home .header-container {
   border-bottom: 2px dashed lightgray;
