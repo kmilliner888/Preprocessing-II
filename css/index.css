@@ -190,6 +190,9 @@ img {
     align-items: center;
     font-size: 16px;
   }
+  .nav-bar nav {
+    margin-top: 10px;
+  }
 }
 .footer {
   width: 100%;
@@ -228,6 +231,19 @@ body {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
